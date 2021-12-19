@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Css/style.css" />
+    <script src="./games/breakout.js" defer></script>
+    <script src="./games/path.js" defer></script>
+    <script src="./games/script.js" defer></script>
+    <script src="./games/matter.js" defer></script>
+    <script src="./games/juggle_ball.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="scene">
+      <div class="cube">
+        <div class="cube__face cube__face--front">
+          <h2>Presentation</h2>
+          <p>
+            You received this box from a mysterious stranger, whith this box you
+            found a paper.This is what's writtent on it
+          </p>
+          <p>
+            Our world is dying to air pollution, according to legends i started
+            looking for the box to save us all, but i couldn't open it
+          </p>
+          <p>You're our last hope</p>
+          <button id="start-btn" class="start-btn">Begin</button>
+        </div>
+        <div class="cube__face cube__face--back">
+          <h2>Breakout</h2>
+          <div class="container">
+            <canvas
+              width="600"
+              height="600"
+              class="gameboard-breakout"
+              id="gameboard-breakout"
+            ></canvas>
+            <button id="start-btn-breakout" class="btn-start-breakout">
+              Start
+            </button>
+          </div>
+        </div>
+        <div class="cube__face cube__face--right">
+          <h2>follow the path to run away</h2>
+          <div class="container">
+            <canvas
+              width="600"
+              height="600"
+              class="gameboard-path"
+              id="gameboard-path"
+            ></canvas>
+            <button id="start-btn-path" class="btn-start-path">Start</button>
+          </div>
+        </div>
+        <div class="cube__face cube__face--left">
+          <h2>Great Job</h2>
+          <p>You've done it, the world will be saved</p>
+          <p>
+            You found AIR in the box, because air is the most important thing
+            for the human population
+          </p>
+          <p>Keep doing your best to preserve planet and bio diversity</p>
+        </div>
+        <div class="cube__face cube__face--top">top</div>
+        <div class="cube__face cube__face--bottom">
+          <h2>Juggle Ball</h2>
+          <div id="juggle-ball" class="game__container"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
