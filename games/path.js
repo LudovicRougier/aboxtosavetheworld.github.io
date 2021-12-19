@@ -126,8 +126,8 @@ canvasPath.addEventListener("mousemove", (event) => {
     }
     if (winPath) {
       drawVictoryPath();
-      cube.classList.add( 'show-back' );
-      cube.classList.remove('show-right')
+      cube.classList.add('show-bottom');
+      cube.classList.remove('show-back');
     }
     if (!winPath && !PathgameOver) {
       playPath();

@@ -223,8 +223,8 @@ const loop = () => {
   update();
   if (score === (brick.row * brick.column)){
       breakoutWin = true;
-      cube.classList.add('show-bottom');
-      cube.classList.remove('show-back');
+      cube.classList.add( 'show-back' );
+      cube.classList.remove('show-right');
   }
   if (!gameOver && score < (brick.row * brick.column)) {
     requestAnimationFrame(loop);
